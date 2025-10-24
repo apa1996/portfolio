@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+header {
+  background: #161b22;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6edf3;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4d4d;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+              url('https://images.unsplash.com/photo-1526378722323-43d0f74c6d2d') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero h2 span {
+  color: #ff4d4d;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  background: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e63946;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About */
+.about p {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  line-height: 1.8;
+}
+
+/* Projects */
+.projects {
+  background: #161b22;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #21262d;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 20px rgba(255,77,77,0.3);
+}
+
+.project-card h3 {
+  color: #ff4d4d;
+  margin-bottom: 0.8rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact-links a {
+  display: inline-block;
+  margin: 0.6rem 1rem;
+  text-decoration: none;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+footer {
+  background: #0d1117;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #30363d;
+}
