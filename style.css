@@ -441,13 +441,18 @@ footer {
     }
 }
 /* Portfolio View Project Button Styling */
+/* Center the View Project button */
+.portfolio-card {
+    text-align: center; /* Center all inline elements inside the card */
+}
+
 .portfolio-card a {
-    display: inline-block;
+    display: inline-block; /* Keep it inline-block so padding works */
     text-decoration: none;
     font-weight: 600;
     color: #fff;
     padding: 10px 25px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 30px;
     background: linear-gradient(45deg, #ff6a00, #ee0979);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
