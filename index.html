@@ -1,111 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aparup Sarkar | Developer & Cyber Security Expert</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Aparup Sarkar</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Hi, I'm <span>Aparup Sarkar</span></h2>
-      <p>Developer & Cyber Security Expert</p>
-      <a href="#projects" class="btn">View My Projects</a>
-    </div>
-  </section>
+    <section id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>I'm Aparup Sarkar is a <span id="typing-text"></span><span class="cursor">&nbsp;</span></h1>
+                <p>I create compelling content and secure, high-performance web applications.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/aparupsarkar1996/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
+                    <a href="https://www.linkedin.com/in/aparup-sarkar-574074331" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
+                    <a href="https://github.com/apa1996" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                    <a href="https://www.instagram.com/imaparup/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                    <a href="https://www.youtube.com/@coderaparup" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/youtube-play.png"/></a>
+                </div>
+            </div>
+            <img src="my.jpg" alt="Your Name" class="home-image">
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Aparup Sarkar — a passionate <strong>Developer and Cyber Security Expert</strong> with a focus on building secure, efficient, and innovative web solutions.  
-      I specialize in creating dynamic applications using technologies like HTML, CSS, JavaScript, and PHP.  
-      With a deep interest in cybersecurity, I aim to bridge the gap between development and digital safety by building systems that are not only functional but also resilient against threats.  
-      I love learning new technologies, automating processes, and helping others understand the importance of secure coding.
-    </p>
-  </section>
+    <section id="about">
+        <div class="about-content">
+            <img src="my1.JPG" alt="Your Name" class="animate-left">
+            <div class="about-text animate-right">
+                <h2>About Me</h2>
+                <p>I am a passionate and versatile professional with expertise in web development, content creation, and cyber security. I build robust and secure applications, and I share my knowledge with the world through my YouTube channel. I am a creative problem-solver with a knack for breaking down complex topics into easy-to-understand content.</p>
+                <div class="stats">
+                    <div>
+                        <span class="stat-value">5+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div>
+                        <span id="projects-completed" class="stat-value">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                </div>
+                <div class="about-buttons">
+                    <a href="#" class="btn active" data-target="#website-dev">WEBSITE DEVELOPMENT</a>
+                    <a href="#" class="btn" data-target="#web-app">WEB APPLICATION</a>
+                    <a href="#" class="btn" data-target="#app-dev">APP DEVELOPMENT</a>
+                </div>
+                <div class="about-details">
+                    <div id="website-dev" class="about-detail active">
+                        <h3>WEBSITE DEVELOPMENT</h3>
+                        <p>I create stunning and responsive websites that are tailored to your needs. From personal portfolios to e-commerce stores, I can build it all.</p>
+                    </div>
+                    <div id="web-app" class="about-detail">
+                        <h3>WEB APPLICATION</h3>
+                        <p>I build powerful and scalable web applications that can help you automate your business processes and improve your efficiency.</p>
+                    </div>
+                    <div id="app-dev" class="about-detail">
+                        <h3>APP DEVELOPMENT</h3>
+                        <p>I develop cross-platform mobile applications that work seamlessly on both Android and iOS devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>My School</h3>
-        <a href="https://myschools.free.nf/pages/index.php" target="_blank">View Project</a>
-      </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-wrapper">
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML"/>
+                <div class="skill-name">HTML <span class="skill-percentage">95%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"/>
+                <div class="skill-name">CSS <span class="skill-percentage">90%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript"/>
+                <div class="skill-name">JavaScript <span class="skill-percentage">80%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React"/>
+                <div class="skill-name">React <span class="skill-percentage">75%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js"/>
+                <div class="skill-name">Node.js <span class="skill-percentage">70%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB"/>
+                <div class="skill-name">MongoDB <span class="skill-percentage">65%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="65%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP"/>
+                <div class="skill-name">PHP <span class="skill-percentage">85%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL"/>
+                <div class="skill-name">MySQL <span class="skill-percentage">80%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/wordpress.png" alt="WordPress"/>
+                <div class="skill-name">WordPress <span class="skill-percentage">90%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C"/>
+                <div class="skill-name">C <span class="skill-percentage">70%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++"/>
+                <div class="skill-name">C++ <span class="skill-percentage">75%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="JAVA"/>
+                <div class="skill-name">JAVA <span class="skill-percentage">80%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
+                <div class="skill-name">Python <span class="skill-percentage">85%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="project-card">
-        <h3>Student Fees System</h3>
-        <a href="https://studentsfees.free.nf" target="_blank">View Project</a>
-      </div>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=1" alt="MY SCHOOL">
+                <h3>MY SCHOOL</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=2" alt="STUDENT FEES SYSTEM">
+                <h3>STUDENT FEES SYSTEM</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=3" alt="HHM PORTAL">
+                <h3>BLOOD DONATION PORTAL</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=4" alt="SCHOOL MANAGEMENT SYSTEM">
+                <h3>SCHOOL MANAGEMENT SYSTEM</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=5" alt="APARUP TEST SITE">
+                <h3>APARUP TEST SITE</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=6" alt="CAPITAL GAME">
+                <h3>CAPITAL GAME</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=7" alt="ROMAN CONVERTER">
+                <h3>ROMAN CONVERTER</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=8" alt="GUESS THE NUMBER GAME">
+                <h3>GUESS THE NUMBER GAME</h3>
+                <p>View Project</p>
+            </div>
+            <div class="portfolio-card animate-fade-in-up">
+                <img src="https://picsum.photos/300/200?random=9" alt="SNAKE GAME">
+                <h3>SNAKE GAME</h3>
+                <p>View Project</p>
+            </div>
+        </div>
+    </section>
 
-      <div class="project-card">
-        <h3>HHM Portal</h3>
-        <a href="https://hhm.free.nf" target="_blank">View Project</a>
-      </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p class="animate-fade-in-up"><img src="https://img.icons8.com/fluent/48/000000/new-post.png"/> aparupsarkar1996@yahoo.com</p>
+            <p class="animate-fade-in-up"><img src="https://img.icons8.com/fluent/48/000000/phone.png"/> 7001671218</p>
+        </div>
+    </section>
 
-      <div class="project-card">
-        <h3>School Management System</h3>
-        <a href="https://sms.free.nf" target="_blank">View Project</a>
-      </div>
+    <footer>
+        <p>&copy; 2025 cm tech Aparup. All rights reserved.</p>
+    </footer>
 
-      <div class="project-card">
-        <h3>Aparup Test Site</h3>
-        <a href="https://aparuptest.infy.uk" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Capital Game</h3>
-        <a href="https://sms.free.nf/capital/index.php" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Roman Converter</h3>
-        <a href="https://sms.free.nf/roman.php" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Guess The Number Game</h3>
-        <a href="https://sms.free.nf/guess.php" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Snake Game</h3>
-        <a href="https://sms.free.nf/snake/index.php" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out if you want to collaborate or learn more about my work.</p>
-    <div class="contact-links">
-      <a href="mailto:aparupsarkar1996@yahoo.com">📧 Email</a>
-      <a href="https://github.com/apa1996" target="_blank">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/aparup-sarkar-574074331" target="_blank">🔗 LinkedIn</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Aparup Sarkar | Developer & Cyber Security Expert</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
