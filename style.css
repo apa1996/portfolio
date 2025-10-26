@@ -440,3 +440,40 @@ footer {
         gap: 0.5rem;
     }
 }
+/* Portfolio View Project Button Styling */
+.portfolio-card a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card a::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-20deg);
+    transition: all 0.5s ease;
+}
+
+.portfolio-card a:hover::after {
+    width: 200%;
+}
+
+.portfolio-card a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
